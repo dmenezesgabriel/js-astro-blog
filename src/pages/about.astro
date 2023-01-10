@@ -10,7 +10,15 @@ const identity = {
   hobbies: ["Travel", "Eat", "Workout", "Retro Games", "Code"],
 };
 
-const skills = ["HTML", "CSS", "JavaScript", "Vue", "Python", "Docker", "Typescript"];
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "Vue",
+  "Python",
+  "Docker",
+  "Typescript",
+];
 
 const happy = true;
 const finished = true;
@@ -24,9 +32,15 @@ const textCase = "uppercase";
 <BaseLayout pageTitle={pageTitle}>
   <h2>My new Astro site</h2>
 
-  <p>I'm working through Astro's introductory tutorial. This is the second page on my website, and it's the first one I build myself</p>
+  <p>
+    I'm working through Astro's introductory tutorial. This is the second page
+    on my website, and it's the first one I build myself
+  </p>
 
-  <p>This site will update as I complete more of the tutorial, so keep checking back and see how my journey is going!</p>
+  <p>
+    This site will update as I complete more of the tutorial, so keep checking
+    back and see how my journey is going!
+  </p>
 
   <p>Here are some facts about me:</p>
   <ul>
@@ -47,5 +61,11 @@ const textCase = "uppercase";
 
   {happy && <p>I am happy to be learning Astro!</p>}
   {finished && <p>I finished this tutorial!</p>}
-  {goal === 3 ? <p>My goal is to finish in 3 days</p> : <p>My goal is not to finish in 3 days</p>}
+  {
+    goal === 3 ? (
+      <p>My goal is to finish in 3 days</p>
+    ) : (
+      <p>My goal is not to finish in 3 days</p>
+    )
+  }
 </BaseLayout>
