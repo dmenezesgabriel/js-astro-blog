@@ -5,7 +5,9 @@ import BlogPost from "../../components/BlogPost.astro";
 import IFrontmatter from "../../types/IFrontmatter";
 
 const pageTitle = "My Astro Learning Blog";
-const allPosts = await Astro.glob<IFrontmatter>("../../../content/posts/*.md");
+const allPosts = await Astro.glob(
+  "../../../content/posts/*.{md,mdx}"
+);
 ---
 
 <BaseLayout pageTitle={pageTitle}>

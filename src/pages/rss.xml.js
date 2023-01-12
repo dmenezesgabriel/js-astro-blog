@@ -5,6 +5,6 @@ export const get = () =>
     title: "Astro | Learner blog",
     description: "My Journey learning Astro",
     site: "https://www.example.com",
-    items: import.meta.glob("./**/*.md"),
+    items: import.meta.glob("./**/*.{md,mdx}"),
     customData: `<language>en-us</language>`,
   });
