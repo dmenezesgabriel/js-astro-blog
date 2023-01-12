@@ -11,4 +11,5 @@ export default interface IFrontmatter {
   author?: string;
   tags?: string[];
   draft?: boolean;
+  slug: string;
 }

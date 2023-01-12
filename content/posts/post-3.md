@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogPostLayout.astro
+layout: ../../src/layouts/BlogPostLayout.astro
 title: My Third Blog Post
 author: Astro Learner
 description: "I had some challenges, but asking in the community really helped!"
@@ -8,6 +8,7 @@ image:
   alt: "The word community with a heart."
 pubDate: 2022-07-15
 tags: ["astro", "learning in public", "setbacks", "community"]
+slug: "post-3"
 ---
 
 It wasn't always smooth sailing, but I'm enjoying building with Astro. And, the [Discord community](https://astro.build/chat) is really friendly and helpful!

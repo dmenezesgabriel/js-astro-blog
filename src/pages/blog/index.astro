@@ -1,0 +1,26 @@
+---
+import "../../styles/global.css";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BlogPost from "../../components/BlogPost.astro";
+import IFrontmatter from "../../types/IFrontmatter";
+
+const pageTitle = "My Astro Learning Blog";
+const allPosts = await Astro.glob<IFrontmatter>("../../../content/posts/*.md");
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <p>This is where I will post about my journey learning Astro.</p>
+
+  <ul>
+    {
+      allPosts.map((post) => (
+        <>
+          <BlogPost
+            url={`${post.frontmatter.slug}`}
+            title={post.frontmatter.title}
+          />
+        </>
+      ))
+    }
+  </ul>
+</BaseLayout>

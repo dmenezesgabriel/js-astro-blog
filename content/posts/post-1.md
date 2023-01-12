@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BlogPostLayout.astro
+layout: ../../src/layouts/BlogPostLayout.astro
 title: "My First Blog Post"
 pubDate: 2022-07-01
 description: "This is the first post of my new Astro blog."
@@ -8,6 +8,7 @@ image:
   url: "https://astro.build/assets/blog/astro-1-release-update/cover.jpeg"
   alt: "The Astro logo with the word One."
 tags: ["astro", "blogging", "learning in public"]
+slug: post-1
 ---
 
 Published on: 2022-07-01
