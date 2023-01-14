@@ -1,0 +1,5 @@
+[
+  { "name": "Batman", "route": "heroes", "id": "0" },
+  { "name": "Ironman", "route": "heroes", "id": "1" },
+  { "name": "Spiderman", "route": "heroes", "id": "2" }
+]
