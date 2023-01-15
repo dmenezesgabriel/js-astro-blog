@@ -4,12 +4,16 @@ import data from "../../../../content/data/api.json";
 
 export const get: APIRoute = ({ params, request }) => {
   const { route, id } = params;
-  return {
-    body: JSON.stringify({
-      ...data.filter((item) => item.id === id && item.route === route)[0],
-      path: new URL(request.url).pathname,
-    }),
-  };
+  const item = data.filter((item) => item.id === id && item.route === route)[0];
+
+  if (!item) {
+    return new Response(null, { status: 404, statusText: "Not Found" });
+  }
+
+  return new Response(
+    JSON.stringify({ ...item, path: new URL(request.url).pathname }),
+    { status: 200, headers: { "Content-Type": "application/json" } }
+  );
 };
 
 export function getStaticPaths() {
