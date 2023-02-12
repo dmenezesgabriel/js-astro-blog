@@ -6,7 +6,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://dmenezesgabriel.github.io",
-  base: "/astro-blog",
+  base: import.meta.env.PROD === true ? "./" : "/",
   vite: {
     plugins: [yaml()],
   },
