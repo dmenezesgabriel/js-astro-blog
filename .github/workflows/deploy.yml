@@ -1,9 +1,10 @@
 name: Deploy to GitHub Pages
 
+env:
+  # Setting an environment variable with the value of a configuration variable
+  VITE_PROD_BASE_URL: ${{ vars.VITE_PROD_BASE_URL }}
+
 on:
-  env:
-    # Setting an environment variable with the value of a configuration variable
-    VITE_PROD_BASE_URL: ${{ vars.VITE_PROD_BASE_URL }}
   # Trigger the workflow every time you push to the `main` branch
   # Using a different branch name? Replace `main` with your branch’s name
   push:
