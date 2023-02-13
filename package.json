@@ -11,14 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/mdx": "^0.14.0",
-    "@astrojs/preact": "^1.2.0",
-    "@astrojs/rss": "^1.0.3",
-    "astro": "^1.9.2",
+    "@astrojs/mdx": "^0.16.0",
+    "@astrojs/preact": "^2.0.3",
+    "@astrojs/rss": "^2.1.0",
+    "astro": "^2.0.11",
     "preact": "^10.11.2"
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.0.1",
-    "@types/node": "^18.11.18"
+    "@types/node": "^18.13.0"
   }
 }
