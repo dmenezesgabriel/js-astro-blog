@@ -17,7 +17,7 @@ permissions:
 jobs:
   build:
     env:
-      VITE_PROD_BASE_URL: ${{ env.VITE_PROD_BASE_URL }}
+      VITE_PROD_BASE_URL: ${{ vars.VITE_PROD_BASE_URL }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
